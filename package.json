@@ -344,6 +344,9 @@
   "overrides": {
     "dumi-plugin-color-chunk": {
       "dumi": "^2.3.0-beta.5"
+    },
+    "jest-environment-jsdom": {
+      "jsdom": "21.1.0"
     }
   },
   "size-limit": [
