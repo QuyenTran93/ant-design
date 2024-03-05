@@ -965,8 +965,6 @@ export default (
         darkPopupBg,
       } = token;
 
-      console.log('hasExpandIcon:', hasExpandIcon);
-
       const menuArrowSize = hasExpandIcon ? token.calc(fontSize).div(7).mul(5).equal() : 0;
 
       // Menu Token
