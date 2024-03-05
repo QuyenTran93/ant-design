@@ -1,4 +1,5 @@
 import { unit, type CSSObject } from '@ant-design/cssinjs';
+
 import type { MenuToken } from '.';
 import { textEllipsis } from '../../style';
 import type { GenerateStyle } from '../../theme/internal';
@@ -15,7 +16,9 @@ const getVerticalInlineStyle: GenerateStyle<MenuToken, CSSObject> = (token) => {
     itemWidth,
   } = token;
 
-  const paddingWithArrow = token.calc(menuArrowSize).add(padding).add(marginXS).equal();
+  const paddingWithArrow = menuArrowSize
+    ? token.calc(menuArrowSize).add(padding).add(marginXS).equal()
+    : padding;
 
   return {
     [`${componentCls}-item`]: {

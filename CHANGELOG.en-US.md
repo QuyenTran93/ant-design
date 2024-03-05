@@ -16,6 +16,12 @@ tag: vVERSION
 
 ---
 
+## 5.14.3
+
+`2024-03-05`
+
+- 🐞 Fix Menu.MenuItem padding if expandIcon is null.
+
 ## 5.14.2
 
 `2024-02-23`
