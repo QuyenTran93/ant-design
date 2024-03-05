@@ -7,9 +7,8 @@
 has_arg() {
   local term="$1"
   local start=0
-
   for arg in "$@"; do
-    if [ $start -gt 0 ] && [ "$arg" == "$term" ]; then
+    if [ $start -gt 0 ] && [ "$arg" = "$term" ]; then
       return 0 # Return 0 if argument exist
     fi
 
